@@ -11,7 +11,7 @@ import me.minseok.shopsystem.velocity.commands.ShopManagerCommand;
 import me.minseok.shopsystem.velocity.messaging.PluginMessageListener;
 import org.slf4j.Logger;
 
-@Plugin(id = "shopsync", name = "ShopSync", version = "1.0.0", description = "Centralized shop price synchronization across all servers", authors = {
+@Plugin(id = "shopsync", name = "Velocity-ShopSync", version = "1.0.1", description = "Centralized shop price synchronization across all servers", authors = {
         "minseok" })
 public class VelocityShopSystem {
 
@@ -39,13 +39,13 @@ public class VelocityShopSystem {
         server.getChannelRegistrar().register(CHANNEL);
 
         // Register message listener
-        server.getEventManager().register(this, new PluginMessageListener(this));
+        server.getEventManager().register(this, new PluginMessageListener(server, configManager, logger));
 
         // Register commands
         CommandManager commandManager = server.getCommandManager();
         commandManager.register(
                 commandManager.metaBuilder("shopmanager").build(),
-                new ShopManagerCommand(this));
+                new ShopManagerCommand(server, configManager));
 
         logger.info("VelocityShopSystem has been enabled!");
     }
