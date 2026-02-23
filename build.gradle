@@ -3,7 +3,7 @@ plugins {
 }
 
 group = 'me.minseok'
-version = '1.0.0'
+version = '1.0.2'
 
 java {
     toolchain {
@@ -30,6 +30,6 @@ tasks.withType(JavaCompile) {
 }
 
 jar {
-    archiveBaseName = 'Shop-Proxy'
-    archiveVersion = '1.0.0'
+    archiveBaseName = 'Velocity-ShopSync'
+    archiveVersion = '1.0.2'
 }

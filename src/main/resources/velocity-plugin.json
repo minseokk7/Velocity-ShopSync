@@ -1,7 +1,7 @@
 {
     "id": "shopsystem",
     "name": "VelocityShopSystem",
-    "version": "1.0.0",
+    "version": "1.0.2",
     "description": "Centralized shop management across all servers",
     "authors": [
         "minseok"
