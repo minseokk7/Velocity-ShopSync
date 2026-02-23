@@ -19,7 +19,7 @@
 - **채널 관리**: `shopsystem:sync` 채널을 통해 서버 간 통신을 관리합니다.
 
 ## 설치 방법
-1. `ShopSync-1.0.0.jar` 파일을 Velocity 서버의 `plugins` 폴더에 넣습니다.
+1. `ShopSync-1.0.2.jar` 파일을 Velocity 서버의 `plugins` 폴더에 넣습니다.
 2. Velocity 서버를 재시작합니다.
 
 ## 설정

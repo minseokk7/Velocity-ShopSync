@@ -18,7 +18,7 @@ This plugin is the proxy component of the **Velocity Shop System**, running on t
 - **Channel Management**: Manages server communication via the `shopsystem:sync` channel.
 
 ## Installation
-1. Place the `VelocityShopSystem-1.0.0.jar` file into the `plugins` folder of your Velocity server.
+1. Place the `VelocityShopSystem-1.0.2.jar` file into the `plugins` folder of your Velocity server.
 2. Restart the Velocity server.
 
 ## Configuration
